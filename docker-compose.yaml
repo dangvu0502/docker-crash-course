@@ -1,0 +1,10 @@
+version: 1.0.0
+services:
+  server:
+    build: .
+    container_name: dump-node-server
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/dump-node
+      - /dump-node/node_modules
